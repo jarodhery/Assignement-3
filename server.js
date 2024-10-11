@@ -5,21 +5,20 @@ const HTTP_PORT = process.env.PORT || 8080;
 const legoData = require('./modules/legoSets');
 
 
-app.set('views', path.join(__dirname + '/views'));
+app.set('views', __dirname + '/views');
 
-
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req, res) => 
 {
-    res.sendFile(path.join(__dirname, 'public/views/index.html'));
+    res.sendFile(path.join(__dirname, '/public/views/index.html'));
 });
 
 
 app.get('/about', (req, res) => 
 {
-    res.sendFile(path.join(__dirname, 'public/views/about.html'));
+    res.sendFile(path.join(__dirname, '/public/views/about.html'));
 });
 
 
