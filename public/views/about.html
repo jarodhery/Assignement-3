@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Lego Collection</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body tabindex="-1">
+  <!-- Navbar -->
+  <div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href="/">Lego Collection</a>
+    </div>
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a href="/">Home</a></li>
+        <li><a class="active" href="/about">About</a></li>
+        <li>
+          <details>
+            <summary>Theme</summary>
+            <ul class="p-2 bg-base-100">
+              <li><a href="/lego/sets?theme=technic">Technic</a></li>
+              <li><a href="/lego/sets?theme=Classic Town">Classic Town</a></li>
+              <li><a href="/lego/sets?theme=Supplemental">Supplemental</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-center hidden sm:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/">Home</a></li>
+        <li><a class="active" href="/about">About</a></li>
+        <li>
+          <details>
+            <summary>Theme</summary>
+            <ul class="p-2 bg-base-100 right-0">
+              <li><a href="/lego/sets?theme=technic">Technic</a></li>
+              <li><a href="/lego/sets?theme=Classic Town">Classic Town</a></li>
+              <li><a href="/lego/sets?theme=Supplemental">Supplemental</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Hero Section -->
+  <div class="container mx-auto">
+    <div class="hero bg-base-200 rounded-lg p-8">
+      <div class="hero-content text-center">
+        <div class="max-w-lg">
+          <h1 class="text-5xl font-bold">About</h1>
+          <p class="py-6">All about me, my hobbies, interests, and journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Responsive Grid -->
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left Column - Image -->
+    <div>
+      <img class="rounded-lg object-cover w-full h-80" src="/img/IMG-20240111-WA0008(1).jpg" alt="An image that represents me" width="50px"/>
+    </div>
+
+    <!-- Right Column - Blurb About You -->
+    <div class="flex flex-col justify-center">
+      <h2 class="text-3xl font-bold mb-4">A little bit about me...</h2>
+      <p class="text-lg">
+        I am currently enrolled at Seneca Polytechnic, where I am studying various courses related to web development, software testing, and more. In my free time, I enjoy playing video games like Valorant and Dota. My favorite sport is climbing, and I try to practice it whenever I can!
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
